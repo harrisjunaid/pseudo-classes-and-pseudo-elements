@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <!-- <link rel="stylesheet" href="../pseudo-classes and pseudo-elements/styles/style.css"> -->
+    <link rel="stylesheet" href="../pseudo-classes and pseudo-elements/styles/style-2.css">
+    
+</head>
+<body>
+    <h1>pseudo-classes</h1>
+    <section title="pseudo-classes for document structure">
+
+        <h2>pseudo-classes for document structure</h2>
+        
+        <article title=":only-child & :only-of-type">  
+            <h3><span>:only-child</span> & <span>:only-of-type</span></h3>
+            <dl>
+                <dt><em><code> :only-child </code></em></dt>
+                    <dd>Selects elements with <strong>no siblings</strong>. Examps are code element within this description title and the strong element within this dd tag of dt.</dd>
+                <dt><em><code> :only-of-type </code></em></dt>
+                    <dd>Selects <strong>distinct type</strong> unique elements among siblings. For instance both of this article's children h2 and dl are of separate type. </dd>    
+            </dl>
+        </article>
+
+        <article title=":first-chiLd & :last-child">
+            <h3><span>:first-child,&nbsp;&nbsp;&nbsp;&nbsp; :first-of-type</span> & <span>:last-child,&nbsp;&nbsp;&nbsp; :last-of-type</span></h3>
+            <dl>
+                <dt><em><code> :first-child</code></em></dt>
+                    <dd>select the <strong>first child</strong> among siblings.</dd>
+                <dt><em><code> :first-of-type</code></em></dt>
+                    <dd>select the <strong>first child of defined type</strong> among siblings.</dd>
+                
+                
+                <dt><em><code>:last-child </code></em></dt>
+                    <dd>selects the <strong>last child</strong> among siblings.</dd>
+                <dt><em><code>:last-child </code></em></dt>
+                    <dd>selects the <strong>last child</strong> among siblings.</dd>
+           
+           
+           
+            </dl>
+        </article>
+        
+        <article title="nth">
+            <h3><span>:nth-child,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :nth-of-type</span>&<span>:nth-last-child,&nbsp; :nth-last-of-type</span></h3>
+            <dl>
+                <dt><em><code>:nth-child</code></em></dt>
+                    <dd>nth child from the <strong>beginning</strong></dd>
+                <dt><em><code>:nth-of-type</code></em></dt>
+                    <dd>nth <u>distint type</u> child from the <strong>beginning</strong></dd>
+                <dt><em><code>:nth-last-child</code></em></dt>
+                    <dd>nth child counting from <strong>end</strong> or the last child</dd>
+                <dt><em><code>:nth-last-of-type</code></em></dt>
+                    <dd>nth <u>distint type</u> child counting from <strong>end</strong> or the last child</dd>
+            </dl>    
+            <div title="example">    
+                <ul>
+                    <li title="first">Item First</li>
+                    <li title="the first second">Number Two</li>
+                    <li title="two from fifth">3 rocks</li>
+                    <li title="fourth">Fourth or Forth?</li>
+                    <li title="fifth">Fifth: not just for drinking</li>
+                    <li>Sixth item</li>
+                    <li>Seventh item</li>
+                    <li>Eighth item</li>
+                    <li>Ninth item</li>
+                    <li>Tenth item</li>
+                </ul>
+            </div>
+        </article>
+
+        <article title=":root and :empty">
+            <h3><span>:root</span> & <span>:empty</span></h3>
+            <dl>
+                <dt><em><code> :root</code></em></dt>
+                    <dd>setting up the <strong>root</strong> of the document. 
+                        <ul>
+                            <li>Pseudo-classes do have a <strong>higher level of specificity</strong> than the HTML element does in CSS, and so anything put in root would <em>win over anything put in the body tag or the HTML tag</em>.</li>
+                            <li>Also allow you to <em>access the shadow DOM</em>, if that winds up being something you want to do with Javascript.</li>
+                            <li>becoming really commonly popular with CSS variables, also called CSS <em>custom properties</em></li>
+                        </ul>                 
+                    </dd>
+                <dt><em><code> :empty</code></em></dt>
+                    <dd>tag that exists, but it has <strong>no content </strong>and no whitespace in it. Mostly used for altering with programming language</dd>
+           
+            </dl>
+
+        </article>
+    </section>  
+
+    <h1>pseudo-elements</h1>
+    <section title="pseudo-elements">
+
+        <h2>********</h2>
+
+        <article title="pseudo-elements">
+            <h3>*******</h3>
+            <dl>
+
+            </dl>
+
+        </article>
+    </section>
+</body>
+</html>

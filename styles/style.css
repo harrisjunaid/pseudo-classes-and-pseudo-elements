@@ -1,0 +1,117 @@
+
+/****************************************/
+/***BEGIN: PSEUDO-CLASSES FOR DOCUMENT STURCTURE***/
+/****************************************/
+
+/* :root and :empty */
+/****************************************/
+:root {
+    background-color: beige;
+  --standard-size:1rem;
+  --code-size:1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*styling***********************************/
+:is(body, section) :is(h1, h2) {
+  font-variant: small-caps;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid tomato;
+
+}
+
+code {
+  font-size: var(--code-size);      
+}
+/****************************************/
+
+/*select all only children within an article element*/
+/*********************************************/
+
+article :only-child {
+  color: green;
+}
+
+
+/* :only-of-type*/
+/*********************************************/
+
+body :only-of-type {
+  background-color:bisque;
+}
+
+article h3:only-of-type {
+  background-color: lightgrey;
+}
+
+/* :first-child and :last-child */
+/*********************************************/
+
+[title*=nth] li:first-child {
+  color: blue;
+}
+
+[title*=nth] li:last-child {
+  color: orange;
+}
+
+/* :first-of-type and :last-of-type */
+/*********************************************/
+
+p:first-of-type {
+    text-decoration: underline;
+}
+
+p:last-of-type {
+  border: 1px solid red;
+}
+
+
+
+/* selector :nth-child,      :nth-of-type, 
+            :nth-last-child, :nth-last-of-typ*/
+/*********************************************/
+
+[title*=nth] li:nth-child(even) {
+  background-color: lightgreen;
+}
+
+[title*=nth] li:nth-child(odd) {
+  background-color: lightblue; */
+}
+
+[title*=nth] li:nth-child(3n + 3) {
+  text-decoration: underline;
+}
+
+/*every nth element + starting from*/
+/*********************************************/
+
+li:nth-last-child(1n + 5) {
+  font-weight: bold;
+}
+
+
+/****************************************/
+/***BEGIN: PSEUDO-CLASSES FOR DOCUMENT STURCTURE***/
+/****************************************/
+/*******************************************/
+/* section:only-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--standard-size);
+  max-width: 900px;
+  margin: 0 auto;
+} */
+
+/*:empty */
+/*is better placed at the end to avoid overwright*/
+/****************************************/
+section :empty {
+    background-color: tomato;
+    width: 800px;
+    height: 10px;
+  }
